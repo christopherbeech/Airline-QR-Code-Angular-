@@ -2,9 +2,14 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'qr-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  template: `
+    <div>
+      <h1 style="text-align: center; padding: 25px">{{pageTitle}}</h1>
+      <qr-card></qr-card>
+    </div>
+  `,
+  // styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'qr-code';
+  pageTitle: string = 'Blue Airlines - QR Code'
 }
